@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthyApp", "HealthyApp.csproj", "{01457231-DD15-4BAD-A676-15CA9C9E6C5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01457231-DD15-4BAD-A676-15CA9C9E6C5A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15E967E8-AC8A-4F96-A4EF-8D2B15F0F4F8}
+	EndGlobalSection
+EndGlobal
