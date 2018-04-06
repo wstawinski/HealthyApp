@@ -1,4 +1,5 @@
 ﻿using Android.App;
+using Android.Content;
 using Android.OS;
 using Android.Widget;
 using HealthyApp.Models;
@@ -6,14 +7,14 @@ using HealthyApp.Repositories;
 using SQLite;
 using System;
 using System.IO;
-using System.Linq;
 
 namespace HealthyApp
 {
     [Activity(Label = "Zdrówko", MainLauncher = true)]
     public class MainActivity : Activity
-    {        
-        static readonly HeartConditionMeasurementsRepository heartConditionMeasurementsRepository = new HeartConditionMeasurementsRepository();
+    {
+        Button buttonHeart;
+        Button buttonBlood;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -22,19 +23,8 @@ namespace HealthyApp
 
             ConfigureDatabase();
 
-            var heartConditionMeasurement = new HeartConditionMeasurement()
-            {
-                UpperBloodPressure = 200,
-                LowerBloodPressure = 80,
-                HeartRate = 60,
-                MeasurementDate = DateTime.Now
-            };
-            heartConditionMeasurementsRepository.SaveHeartConditionMeasurement(heartConditionMeasurement);
-
-            TextView dbContent = FindViewById<TextView>(Resource.Id.textViewMainDbTest);
-            var measurement = heartConditionMeasurementsRepository.GetAllHeartConditionMeasurements()[1];
-
-            dbContent.Text = String.Format("Górne ciśnienie: {0}, Dolne ciśnienie: {1}, Tętno: {2}", measurement.UpperBloodPressure, measurement.LowerBloodPressure, measurement.HeartRate);
+            FindViews();
+            HandleEvents();
 
         }
 
@@ -46,6 +36,29 @@ namespace HealthyApp
             db.CreateTable<BloodConditionMeasurement>();
             db.CreateTable<HeartConditionMeasurement>();
         }
+
+        void FindViews()
+        {
+            buttonHeart = FindViewById<Button>(Resource.Id.buttonMainHeartCondition);
+            buttonBlood = FindViewById<Button>(Resource.Id.buttonMainBloodCondition);
+        }
+
+        void HandleEvents()
+        {
+            buttonHeart.Click += ButtonHeart_Click;
+            buttonBlood.Click += ButtonBlood_Click;
+        }
+
+        private void ButtonHeart_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(HeartConditionMainActivity));
+            StartActivity(intent);
+        }
+
+        private void ButtonBlood_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }        
     }
 }
 

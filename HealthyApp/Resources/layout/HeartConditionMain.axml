@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Wprowadź wynik pomiaru ciśnienia krwi oraz tętna lub sprawdź historię pomiarów."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionMainHeading"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="15dp"
+            android:textColor="#000000"
+            android:background="#E6E6E6" />
+        <TextView
+            android:text="Górne ciśnienie:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionMainUpperPressure"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextHeartConditionMainUpperPressure"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:maxLength="3"
+            android:inputType="number" />
+        <TextView
+            android:text="Dolne ciśnienie:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionMainLowerPressure"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextHeartConditionMainLowerPressure"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:maxLength="3"
+            android:inputType="number" />
+        <TextView
+            android:text="Tętno:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionMainHeartRate"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editTextHeartConditionMainHeartRate"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:maxLength="3"
+            android:inputType="number" />
+        <Button
+            android:text="Zapisz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonHeartConditionMainSubmit"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#5882FA"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

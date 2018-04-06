@@ -4,7 +4,7 @@ using SQLite;
 namespace HealthyApp.Models
 {
     [Table("HeartConditionMeasurements")]
-    public class HeartConditionMeasurement
+    class HeartConditionMeasurement
     {
         [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
