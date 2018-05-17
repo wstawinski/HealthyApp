@@ -6,7 +6,9 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
         <TextView
             android:text="Wprowadź wynik pomiaru ciśnienia krwi oraz tętna lub sprawdź historię pomiarów."
             android:layout_width="match_parent"
@@ -75,11 +77,21 @@
             android:maxLength="3"
             android:inputType="number" />
         <Button
-            android:text="Zapisz"
+            android:text="Zapisz pomiar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/buttonHeartConditionMainSubmit"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#5882FA"
+            android:textColor="@android:color/white" />
+        <Button
+            android:text="Historia pomiarów"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonHeartConditionMainHistory"
+            android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:background="#5882FA"

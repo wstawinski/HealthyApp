@@ -1,9 +1,12 @@
 ﻿using System;
 using Android.App;
+using Android.Content;
 using Android.OS;
+using Android.Views.InputMethods;
 using Android.Widget;
 using HealthyApp.Models;
 using HealthyApp.Services;
+
 
 namespace HealthyApp
 {
@@ -14,6 +17,7 @@ namespace HealthyApp
         EditText editTextHeartConditionMainLowerPressure;
         EditText editTextHeartConditionMainHeartRate;
         Button buttonHeartConditionMainSubmit;
+        Button buttonHeartConditionMainHistory;
 
         readonly HeartConditionMeasurementsService service = new HeartConditionMeasurementsService();
 
@@ -24,7 +28,9 @@ namespace HealthyApp
 
             FindViews();
             HandleEvents();
-
+            
+            InputMethodManager imm = GetSystemService(InputMethodService) as InputMethodManager;  
+            imm.HideSoftInputFromWindow(editTextHeartConditionMainUpperPressure.WindowToken, HideSoftInputFlags.None);
         }
 
         private void FindViews()
@@ -33,11 +39,13 @@ namespace HealthyApp
             editTextHeartConditionMainLowerPressure = FindViewById<EditText>(Resource.Id.editTextHeartConditionMainLowerPressure);
             editTextHeartConditionMainHeartRate = FindViewById<EditText>(Resource.Id.editTextHeartConditionMainHeartRate);
             buttonHeartConditionMainSubmit = FindViewById<Button>(Resource.Id.buttonHeartConditionMainSubmit);
+            buttonHeartConditionMainHistory = FindViewById<Button>(Resource.Id.buttonHeartConditionMainHistory);
         }
 
         private void HandleEvents()
         {
             buttonHeartConditionMainSubmit.Click += ButtonHeartConditionMainSubmit_Click;
+            buttonHeartConditionMainHistory.Click += ButtonHeartConditionMainHistory_Click;
         }
 
         private void ButtonHeartConditionMainSubmit_Click(object sender, EventArgs e)
@@ -64,6 +72,12 @@ namespace HealthyApp
             confirmationDialog.SetTitle("Potwierdzenie");
             confirmationDialog.SetMessage("Twój pomiar został zapisany.");
             confirmationDialog.Show();
+        }
+
+        private void ButtonHeartConditionMainHistory_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(HeartConditionHistoryActivity));
+            StartActivity(intent);
         }
     }
 }

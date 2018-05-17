@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF">
     <TextView
-        android:text="Zarejestruj w aplikacji wyniki badań aby móc kontrolować swój stan zdrowia."
+        android:text="Rejestruj w aplikacji swoje wyniki badań i kontroluj na bieżąco stan zdrowia."
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewMainHeading"

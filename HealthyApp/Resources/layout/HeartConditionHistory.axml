@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <TextView
+            android:text="Wyniki dla okresu:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistorySpinnerLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerHeartConditionHistory"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:text="Gorne ciśnienie:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryUpperBloodPressureLabel"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+        <microcharts.droid.ChartView
+            android:id="@+id/chartViewHeartConditionHistoryUpperBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:text="Dolne ciśnienie:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryLowerBloodPressureLabel"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+        <microcharts.droid.ChartView
+            android:id="@+id/chartViewHeartConditionHistoryLowerBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp" />
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewHeartConditionBloodPressureHistory" />
+    </LinearLayout>
+</ScrollView>
