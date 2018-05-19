@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="Pokaż wyniki dla okresu:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryChartsSpinnerLabel"
+            android:layout_marginTop="20dp"
+            android:textSize="15dp"
+            android:textColor="#000000" />
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerHeartConditionHistoryCharts"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:text="Ciśnienie skurczowe:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryChartsUpperBloodPressure"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+        <microcharts.droid.ChartView
+            android:id="@+id/chartViewHeartConditionHistoryChartsUpperBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:text="Ciśnienie rozkurczowe:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryChartsLowerBloodPressure"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+        <microcharts.droid.ChartView
+            android:id="@+id/chartViewHeartConditionHistoryChartsLowerBloodPressure"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp" />
+        <TextView
+            android:text="Tętno:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHeartConditionHistoryChartsHeartRate"
+            android:textSize="12dp"
+            android:textColor="#000000" />
+        <microcharts.droid.ChartView
+            android:id="@+id/chartViewHeartConditionHistoryChartsHeartRate"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="20dp" />
+    </LinearLayout>
+</ScrollView>

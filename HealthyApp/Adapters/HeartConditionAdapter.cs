@@ -13,13 +13,13 @@ using HealthyApp.Models;
 
 namespace HealthyApp.Adapters
 {
-    class HeartConditionBloodPressureAdapter : BaseAdapter<HeartConditionMeasurement>
+    class HeartConditionAdapter : BaseAdapter<HeartConditionMeasurement>
     {
 
         Activity context;
         List<HeartConditionMeasurement> items;
 
-        public HeartConditionBloodPressureAdapter(Activity context, List<HeartConditionMeasurement> items) : base()
+        public HeartConditionAdapter(Activity context, List<HeartConditionMeasurement> items) : base()
         {
             this.context = context;
             this.items = items;

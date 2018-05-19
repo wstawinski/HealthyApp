@@ -53,7 +53,22 @@ namespace HealthyApp
             if (string.IsNullOrEmpty(editTextHeartConditionMainUpperPressure.Text) ||
                 string.IsNullOrEmpty(editTextHeartConditionMainLowerPressure.Text) ||
                 string.IsNullOrEmpty(editTextHeartConditionMainHeartRate.Text))
+            {
+                var alertDialog = new AlertDialog.Builder(this);
+                alertDialog.SetTitle("Uwaga!");
+                alertDialog.SetMessage("Aby zapisać wynik musisz uzupełnić wszystkie pola.");
+                alertDialog.Show();
                 return;
+            }
+
+            if (service.CheckIfMeasurementWasSavedToday())
+            {
+                var alertDialog = new AlertDialog.Builder(this);
+                alertDialog.SetTitle("Uwaga!");
+                alertDialog.SetMessage("Dzisiaj już wprowadziłeś wynik pomiaru.");
+                alertDialog.Show();
+                return;
+            }
 
             var upperPressure = Int32.Parse(editTextHeartConditionMainUpperPressure.Text);
             var lowerPressure = Int32.Parse(editTextHeartConditionMainLowerPressure.Text);
@@ -76,6 +91,15 @@ namespace HealthyApp
 
         private void ButtonHeartConditionMainHistory_Click(object sender, EventArgs e)
         {
+            var measurements = service.GetAllHeartConditionMeasurements();
+            if (measurements.Count == 0)
+            {
+                var alertDialog = new AlertDialog.Builder(this);
+                alertDialog.SetTitle("Uwaga!");
+                alertDialog.SetMessage("Nie zapisano jeszcze żadnego wyniku.");
+                alertDialog.Show();
+                return;
+            }
             var intent = new Intent(this, typeof(HeartConditionHistoryActivity));
             StartActivity(intent);
         }

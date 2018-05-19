@@ -42,5 +42,18 @@ namespace HealthyApp.Repositories
                                select measurement;
             return measurements.ToList();
         }
+
+        internal bool CheckIfMeasurementWasSavedToday()
+        {
+            var today = DateTime.Now.Date;
+
+            var measurement = db.Table<HeartConditionMeasurement>().ToList()
+                .Where(m => m.MeasurementDate.Year == today.Year && m.MeasurementDate.Month == today.Month && m.MeasurementDate.Day == today.Day)
+                .FirstOrDefault();
+
+            if (measurement != null)
+                return true;
+            return false;
+        }
     }
 }
