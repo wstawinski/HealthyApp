@@ -9,11 +9,11 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".40"
-        android:id="@+id/textViewHearConditionHistoryDataRowDate"
+        android:id="@+id/textViewHeartConditionHistoryDataRowDate"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="15dp"
-        android:textColor="#000000"/>
+        android:textColor="#000000" />
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="0dp"
@@ -24,30 +24,30 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewHearConditionHistoryDataRowUpperBloodPressure"
+            android:id="@+id/textViewHeartConditionHistoryDataRowUpperBloodPressure"
             android:textSize="15dp"
-            android:textColor="#000000"/>
+            android:textColor="#000000" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"
-            android:id="@+id/textViewHearConditionHistoryDataRowBloodPressureSlash"
+            android:id="@+id/textViewHeartConditionHistoryDataRowBloodPressureSlash"
             android:textSize="15dp"
-            android:textColor="#000000"/>
+            android:textColor="#000000" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewHearConditionHistoryDataRowLowerBloodPressure"
+            android:id="@+id/textViewHeartConditionHistoryDataRowLowerBloodPressure"
             android:textSize="15dp"
-            android:textColor="#000000"/>
+            android:textColor="#000000" />
     </LinearLayout>
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight=".30"
-        android:id="@+id/textViewHearConditionHistoryDataRowHeartRate"
+        android:id="@+id/textViewHeartConditionHistoryDataRowHeartRate"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:textSize="15dp"
-        android:textColor="#000000"/>
+        android:textColor="#000000" />
 </LinearLayout>

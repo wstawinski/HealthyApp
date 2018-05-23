@@ -7,14 +7,14 @@
         android:text="Pokaż wyniki dla okresu:"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewHeartConditionHistoryDataSpinnerLabel"
+        android:id="@+id/textViewBloodConditionHistoryDataSpinnerLabel"
         android:layout_marginTop="20dp"
         android:textSize="15dp"
         android:textColor="#000000" />
     <Spinner
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/spinnerHeartConditionHistoryData"
+        android:id="@+id/spinnerBloodConditionHistoryData"
         android:layout_marginBottom="20dp" />
     <LinearLayout
         android:orientation="horizontal"
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight=".40"
             android:text="Data"
-            android:id="@+id/textViewHeartConditionHistoryDataDateLabel"
+            android:id="@+id/textViewBloodConditionHistoryDataDateLabel"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textSize="15dp"
@@ -35,19 +35,9 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:text="Ciśnienie"
-            android:id="@+id/textViewHeartConditionHistoryDataBloodPressureLabel"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:textSize="15dp"
-            android:textColor="#000000" />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight=".30"
-            android:text="Tętno"
-            android:id="@+id/textViewHeartConditionHistoryDataHeartRateLabel"
+            android:layout_weight=".60"
+            android:text="Poziom cukru we krwi [mg/dL]"
+            android:id="@+id/textViewBloodConditionHistoryDataSugarLevelLabel"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textSize="15dp"
@@ -56,6 +46,6 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/listViewHeartConditionHistory"
+        android:id="@+id/listViewBloodConditionHistory"
         android:layout_marginBottom="20dp" />
 </LinearLayout>

@@ -28,9 +28,6 @@ namespace HealthyApp
 
             FindViews();
             HandleEvents();
-            
-            InputMethodManager imm = GetSystemService(InputMethodService) as InputMethodManager;  
-            imm.HideSoftInputFromWindow(editTextHeartConditionMainUpperPressure.WindowToken, HideSoftInputFlags.None);
         }
 
         private void FindViews()

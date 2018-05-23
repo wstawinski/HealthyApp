@@ -6,6 +6,7 @@ using HealthyApp.Models;
 using HealthyApp.Repositories;
 using SQLite;
 using System;
+using System.Collections.Generic;
 using System.IO;
 
 namespace HealthyApp
@@ -25,7 +26,6 @@ namespace HealthyApp
 
             FindViews();
             HandleEvents();
-
         }
 
         void ConfigureDatabase()
@@ -57,7 +57,8 @@ namespace HealthyApp
 
         private void ButtonBlood_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            var intent = new Intent(this, typeof(BloodConditionMainActivity));
+            StartActivity(intent);
         }        
     }
 }

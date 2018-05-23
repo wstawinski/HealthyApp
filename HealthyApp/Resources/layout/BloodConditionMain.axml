@@ -10,10 +10,10 @@
         android:focusable="true"
         android:focusableInTouchMode="true">
         <TextView
-            android:text="Wprowadź wynik pomiaru ciśnienia krwi oraz tętna lub sprawdź historię wyników."
+            android:text="Wprowadź wynik pomiaru poziomu cukru we krwi lub sprawdź historię wyników."
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewHeartConditionMainHeading"
+            android:id="@+id/textViewBloodConditionMainHeading"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
             android:paddingLeft="20dp"
@@ -26,61 +26,40 @@
             android:textColor="#000000"
             android:background="#E6E6E6" />
         <TextView
-            android:text="Ciśnienie skurczowe:"
+            android:text="Pioziom cukru we krwi:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewHeartConditionMainUpperPressure"
+            android:id="@+id/textViewBloodConditionMainSugarLevel"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:textSize="15dp"
             android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainUpperPressure"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
-        <TextView
-            android:text="Ciśnienie rozkurczowe:"
+        <LinearLayout
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textViewHeartConditionMainLowerPressure"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:textSize="15dp"
-            android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainLowerPressure"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
-        <TextView
-            android:text="Tętno:"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/textViewHeartConditionMainHeartRate"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:textSize="15dp"
-            android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainHeartRate"
-            android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextBloodConditionMainSugarLevel"
+                android:maxLength="3"
+                android:inputType="number" />
+            <TextView
+                android:text="mg/dL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewBloodConditionMainSugarLevelUnit"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+        </LinearLayout>
         <Button
             android:text="Zapisz wynik"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonHeartConditionMainSubmit"
+            android:id="@+id/buttonBloodConditionMainSubmit"
             android:layout_marginBottom="10dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
@@ -90,7 +69,7 @@
             android:text="Historia wyników"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/buttonHeartConditionMainHistory"
+            android:id="@+id/buttonBloodConditionMainHistory"
             android:layout_marginBottom="20dp"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"

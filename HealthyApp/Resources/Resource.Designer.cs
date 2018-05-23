@@ -2217,8 +2217,8 @@ namespace HealthyApp
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0800ac
-			public const int action0 = 2131230892;
+			// aapt resource value: 0x7f0800be
+			public const int action0 = 2131230910;
 			
 			// aapt resource value: 0x7f08005a
 			public const int action_bar = 2131230810;
@@ -2244,8 +2244,8 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08005b
 			public const int action_context_bar = 2131230811;
 			
-			// aapt resource value: 0x7f0800b0
-			public const int action_divider = 2131230896;
+			// aapt resource value: 0x7f0800c2
+			public const int action_divider = 2131230914;
 			
 			// aapt resource value: 0x7f080003
 			public const int action_menu_divider = 2131230723;
@@ -2277,23 +2277,29 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08002a
 			public const int bottom = 2131230762;
 			
-			// aapt resource value: 0x7f08008e
-			public const int buttonHeartConditionMainHistory = 2131230862;
+			// aapt resource value: 0x7f08007a
+			public const int buttonBloodConditionMainHistory = 2131230842;
 			
-			// aapt resource value: 0x7f08008d
-			public const int buttonHeartConditionMainSubmit = 2131230861;
+			// aapt resource value: 0x7f080079
+			public const int buttonBloodConditionMainSubmit = 2131230841;
 			
-			// aapt resource value: 0x7f080092
-			public const int buttonMainBloodCondition = 2131230866;
+			// aapt resource value: 0x7f0800a0
+			public const int buttonHeartConditionMainHistory = 2131230880;
 			
-			// aapt resource value: 0x7f080091
-			public const int buttonMainHeartCondition = 2131230865;
+			// aapt resource value: 0x7f08009f
+			public const int buttonHeartConditionMainSubmit = 2131230879;
+			
+			// aapt resource value: 0x7f0800a4
+			public const int buttonMainBloodCondition = 2131230884;
+			
+			// aapt resource value: 0x7f0800a3
+			public const int buttonMainHeartCondition = 2131230883;
 			
 			// aapt resource value: 0x7f080044
 			public const int buttonPanel = 2131230788;
 			
-			// aapt resource value: 0x7f0800ad
-			public const int cancel_action = 2131230893;
+			// aapt resource value: 0x7f0800bf
+			public const int cancel_action = 2131230911;
 			
 			// aapt resource value: 0x7f08002b
 			public const int center = 2131230763;
@@ -2304,20 +2310,23 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08002d
 			public const int center_vertical = 2131230765;
 			
-			// aapt resource value: 0x7f08007a
-			public const int chartViewHeartConditionHistoryChartsHeartRate = 2131230842;
+			// aapt resource value: 0x7f08006d
+			public const int chartViewBloodConditionHistoryChartsSugarLevel = 2131230829;
 			
-			// aapt resource value: 0x7f080078
-			public const int chartViewHeartConditionHistoryChartsLowerBloodPressure = 2131230840;
+			// aapt resource value: 0x7f08008c
+			public const int chartViewHeartConditionHistoryChartsHeartRate = 2131230860;
 			
-			// aapt resource value: 0x7f080076
-			public const int chartViewHeartConditionHistoryChartsUpperBloodPressure = 2131230838;
+			// aapt resource value: 0x7f08008a
+			public const int chartViewHeartConditionHistoryChartsLowerBloodPressure = 2131230858;
+			
+			// aapt resource value: 0x7f080088
+			public const int chartViewHeartConditionHistoryChartsUpperBloodPressure = 2131230856;
 			
 			// aapt resource value: 0x7f080052
 			public const int checkbox = 2131230802;
 			
-			// aapt resource value: 0x7f0800b3
-			public const int chronometer = 2131230899;
+			// aapt resource value: 0x7f0800c5
+			public const int chronometer = 2131230917;
 			
 			// aapt resource value: 0x7f080033
 			public const int clip_horizontal = 2131230771;
@@ -2343,32 +2352,35 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080040
 			public const int default_activity_button = 2131230784;
 			
-			// aapt resource value: 0x7f08006a
-			public const int design_bottom_sheet = 2131230826;
+			// aapt resource value: 0x7f08007c
+			public const int design_bottom_sheet = 2131230844;
 			
-			// aapt resource value: 0x7f080071
-			public const int design_menu_item_action_area = 2131230833;
+			// aapt resource value: 0x7f080083
+			public const int design_menu_item_action_area = 2131230851;
 			
-			// aapt resource value: 0x7f080070
-			public const int design_menu_item_action_area_stub = 2131230832;
+			// aapt resource value: 0x7f080082
+			public const int design_menu_item_action_area_stub = 2131230850;
 			
-			// aapt resource value: 0x7f08006f
-			public const int design_menu_item_text = 2131230831;
+			// aapt resource value: 0x7f080081
+			public const int design_menu_item_text = 2131230849;
 			
-			// aapt resource value: 0x7f08006e
-			public const int design_navigation_view = 2131230830;
+			// aapt resource value: 0x7f080080
+			public const int design_navigation_view = 2131230848;
 			
 			// aapt resource value: 0x7f08000e
 			public const int disableHome = 2131230734;
 			
-			// aapt resource value: 0x7f08008c
-			public const int editTextHeartConditionMainHeartRate = 2131230860;
+			// aapt resource value: 0x7f080077
+			public const int editTextBloodConditionMainSugarLevel = 2131230839;
 			
-			// aapt resource value: 0x7f08008a
-			public const int editTextHeartConditionMainLowerPressure = 2131230858;
+			// aapt resource value: 0x7f08009e
+			public const int editTextHeartConditionMainHeartRate = 2131230878;
 			
-			// aapt resource value: 0x7f080088
-			public const int editTextHeartConditionMainUpperPressure = 2131230856;
+			// aapt resource value: 0x7f08009c
+			public const int editTextHeartConditionMainLowerPressure = 2131230876;
+			
+			// aapt resource value: 0x7f08009a
+			public const int editTextHeartConditionMainUpperPressure = 2131230874;
 			
 			// aapt resource value: 0x7f08005c
 			public const int edit_query = 2131230812;
@@ -2376,8 +2388,8 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08001c
 			public const int end = 2131230748;
 			
-			// aapt resource value: 0x7f0800b8
-			public const int end_padder = 2131230904;
+			// aapt resource value: 0x7f0800ca
+			public const int end_padder = 2131230922;
 			
 			// aapt resource value: 0x7f080023
 			public const int enterAlways = 2131230755;
@@ -2406,8 +2418,11 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080038
 			public const int @fixed = 2131230776;
 			
-			// aapt resource value: 0x7f080072
-			public const int fragmentContainerHeartConditionHistory = 2131230834;
+			// aapt resource value: 0x7f080069
+			public const int fragmentContainerBloodConditionHistory = 2131230825;
+			
+			// aapt resource value: 0x7f080084
+			public const int fragmentContainerHeartConditionHistory = 2131230852;
 			
 			// aapt resource value: 0x7f080005
 			public const int home = 2131230725;
@@ -2424,11 +2439,11 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08003f
 			public const int image = 2131230783;
 			
-			// aapt resource value: 0x7f08008f
-			public const int imageViewMain = 2131230863;
+			// aapt resource value: 0x7f0800a1
+			public const int imageViewMain = 2131230881;
 			
-			// aapt resource value: 0x7f0800b7
-			public const int info = 2131230903;
+			// aapt resource value: 0x7f0800c9
+			public const int info = 2131230921;
 			
 			// aapt resource value: 0x7f080000
 			public const int item_touch_helper_previous_elevation = 2131230720;
@@ -2436,23 +2451,26 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08002f
 			public const int left = 2131230767;
 			
-			// aapt resource value: 0x7f0800b1
-			public const int line1 = 2131230897;
+			// aapt resource value: 0x7f0800c3
+			public const int line1 = 2131230915;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int line3 = 2131230901;
+			// aapt resource value: 0x7f0800c7
+			public const int line3 = 2131230919;
 			
 			// aapt resource value: 0x7f08000b
 			public const int listMode = 2131230731;
 			
-			// aapt resource value: 0x7f080080
-			public const int listViewHeartConditionHistory = 2131230848;
+			// aapt resource value: 0x7f080072
+			public const int listViewBloodConditionHistory = 2131230834;
+			
+			// aapt resource value: 0x7f080092
+			public const int listViewHeartConditionHistory = 2131230866;
 			
 			// aapt resource value: 0x7f080041
 			public const int list_item = 2131230785;
 			
-			// aapt resource value: 0x7f0800af
-			public const int media_actions = 2131230895;
+			// aapt resource value: 0x7f0800c1
+			public const int media_actions = 2131230913;
 			
 			// aapt resource value: 0x7f08001d
 			public const int middle = 2131230749;
@@ -2460,83 +2478,83 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080037
 			public const int mini = 2131230775;
 			
-			// aapt resource value: 0x7f08009e
-			public const int mr_art = 2131230878;
-			
-			// aapt resource value: 0x7f080093
-			public const int mr_chooser_list = 2131230867;
-			
-			// aapt resource value: 0x7f080096
-			public const int mr_chooser_route_desc = 2131230870;
-			
-			// aapt resource value: 0x7f080094
-			public const int mr_chooser_route_icon = 2131230868;
-			
-			// aapt resource value: 0x7f080095
-			public const int mr_chooser_route_name = 2131230869;
-			
-			// aapt resource value: 0x7f08009b
-			public const int mr_close = 2131230875;
-			
-			// aapt resource value: 0x7f0800a1
-			public const int mr_control_divider = 2131230881;
-			
-			// aapt resource value: 0x7f0800a7
-			public const int mr_control_play_pause = 2131230887;
-			
-			// aapt resource value: 0x7f0800aa
-			public const int mr_control_subtitle = 2131230890;
-			
-			// aapt resource value: 0x7f0800a9
-			public const int mr_control_title = 2131230889;
-			
-			// aapt resource value: 0x7f0800a8
-			public const int mr_control_title_container = 2131230888;
-			
-			// aapt resource value: 0x7f08009c
-			public const int mr_custom_control = 2131230876;
-			
-			// aapt resource value: 0x7f08009d
-			public const int mr_default_control = 2131230877;
-			
-			// aapt resource value: 0x7f080098
-			public const int mr_dialog_area = 2131230872;
-			
-			// aapt resource value: 0x7f080097
-			public const int mr_expandable_area = 2131230871;
-			
-			// aapt resource value: 0x7f0800ab
-			public const int mr_group_expand_collapse = 2131230891;
-			
-			// aapt resource value: 0x7f08009f
-			public const int mr_media_main_control = 2131230879;
-			
-			// aapt resource value: 0x7f08009a
-			public const int mr_name = 2131230874;
-			
-			// aapt resource value: 0x7f0800a0
-			public const int mr_playback_control = 2131230880;
-			
-			// aapt resource value: 0x7f080099
-			public const int mr_title_bar = 2131230873;
-			
-			// aapt resource value: 0x7f0800a2
-			public const int mr_volume_control = 2131230882;
-			
-			// aapt resource value: 0x7f0800a3
-			public const int mr_volume_group_list = 2131230883;
+			// aapt resource value: 0x7f0800b0
+			public const int mr_art = 2131230896;
 			
 			// aapt resource value: 0x7f0800a5
-			public const int mr_volume_item_icon = 2131230885;
+			public const int mr_chooser_list = 2131230885;
+			
+			// aapt resource value: 0x7f0800a8
+			public const int mr_chooser_route_desc = 2131230888;
 			
 			// aapt resource value: 0x7f0800a6
-			public const int mr_volume_slider = 2131230886;
+			public const int mr_chooser_route_icon = 2131230886;
+			
+			// aapt resource value: 0x7f0800a7
+			public const int mr_chooser_route_name = 2131230887;
+			
+			// aapt resource value: 0x7f0800ad
+			public const int mr_close = 2131230893;
+			
+			// aapt resource value: 0x7f0800b3
+			public const int mr_control_divider = 2131230899;
+			
+			// aapt resource value: 0x7f0800b9
+			public const int mr_control_play_pause = 2131230905;
+			
+			// aapt resource value: 0x7f0800bc
+			public const int mr_control_subtitle = 2131230908;
+			
+			// aapt resource value: 0x7f0800bb
+			public const int mr_control_title = 2131230907;
+			
+			// aapt resource value: 0x7f0800ba
+			public const int mr_control_title_container = 2131230906;
+			
+			// aapt resource value: 0x7f0800ae
+			public const int mr_custom_control = 2131230894;
+			
+			// aapt resource value: 0x7f0800af
+			public const int mr_default_control = 2131230895;
+			
+			// aapt resource value: 0x7f0800aa
+			public const int mr_dialog_area = 2131230890;
+			
+			// aapt resource value: 0x7f0800a9
+			public const int mr_expandable_area = 2131230889;
+			
+			// aapt resource value: 0x7f0800bd
+			public const int mr_group_expand_collapse = 2131230909;
+			
+			// aapt resource value: 0x7f0800b1
+			public const int mr_media_main_control = 2131230897;
+			
+			// aapt resource value: 0x7f0800ac
+			public const int mr_name = 2131230892;
+			
+			// aapt resource value: 0x7f0800b2
+			public const int mr_playback_control = 2131230898;
+			
+			// aapt resource value: 0x7f0800ab
+			public const int mr_title_bar = 2131230891;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int mr_volume_control = 2131230900;
+			
+			// aapt resource value: 0x7f0800b5
+			public const int mr_volume_group_list = 2131230901;
+			
+			// aapt resource value: 0x7f0800b7
+			public const int mr_volume_item_icon = 2131230903;
+			
+			// aapt resource value: 0x7f0800b8
+			public const int mr_volume_slider = 2131230904;
 			
 			// aapt resource value: 0x7f080016
 			public const int multiply = 2131230742;
 			
-			// aapt resource value: 0x7f08006d
-			public const int navigation_header_container = 2131230829;
+			// aapt resource value: 0x7f08007f
+			public const int navigation_header_container = 2131230847;
 			
 			// aapt resource value: 0x7f080021
 			public const int never = 2131230753;
@@ -2631,11 +2649,11 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080013
 			public const int showTitle = 2131230739;
 			
-			// aapt resource value: 0x7f08006c
-			public const int snackbar_action = 2131230828;
+			// aapt resource value: 0x7f08007e
+			public const int snackbar_action = 2131230846;
 			
-			// aapt resource value: 0x7f08006b
-			public const int snackbar_text = 2131230827;
+			// aapt resource value: 0x7f08007d
+			public const int snackbar_text = 2131230845;
 			
 			// aapt resource value: 0x7f080027
 			public const int snap = 2131230759;
@@ -2643,11 +2661,17 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080045
 			public const int spacer = 2131230789;
 			
-			// aapt resource value: 0x7f080074
-			public const int spinnerHeartConditionHistoryCharts = 2131230836;
+			// aapt resource value: 0x7f08006b
+			public const int spinnerBloodConditionHistoryCharts = 2131230827;
 			
-			// aapt resource value: 0x7f08007c
-			public const int spinnerHeartConditionHistoryData = 2131230844;
+			// aapt resource value: 0x7f08006f
+			public const int spinnerBloodConditionHistoryData = 2131230831;
+			
+			// aapt resource value: 0x7f080086
+			public const int spinnerHeartConditionHistoryCharts = 2131230854;
+			
+			// aapt resource value: 0x7f08008e
+			public const int spinnerHeartConditionHistoryData = 2131230862;
 			
 			// aapt resource value: 0x7f080008
 			public const int split_action_bar = 2131230728;
@@ -2664,8 +2688,8 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080031
 			public const int start = 2131230769;
 			
-			// aapt resource value: 0x7f0800ae
-			public const int status_bar_latest_event_content = 2131230894;
+			// aapt resource value: 0x7f0800c0
+			public const int status_bar_latest_event_content = 2131230912;
 			
 			// aapt resource value: 0x7f080065
 			public const int submit_area = 2131230821;
@@ -2673,71 +2697,101 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08000d
 			public const int tabMode = 2131230733;
 			
-			// aapt resource value: 0x7f0800b6
-			public const int text = 2131230902;
+			// aapt resource value: 0x7f0800c8
+			public const int text = 2131230920;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int text2 = 2131230900;
+			// aapt resource value: 0x7f0800c6
+			public const int text2 = 2131230918;
 			
 			// aapt resource value: 0x7f08004d
 			public const int textSpacerNoButtons = 2131230797;
 			
-			// aapt resource value: 0x7f08007e
-			public const int textViewHearConditionHistoryDataBloodPressureLabel = 2131230846;
+			// aapt resource value: 0x7f08006a
+			public const int textViewBloodConditionHistoryChartsSpinnerLabel = 2131230826;
 			
-			// aapt resource value: 0x7f08007d
-			public const int textViewHearConditionHistoryDataDateLabel = 2131230845;
+			// aapt resource value: 0x7f08006c
+			public const int textViewBloodConditionHistoryChartsSugarLevel = 2131230828;
 			
-			// aapt resource value: 0x7f08007f
-			public const int textViewHearConditionHistoryDataHeartRateLabel = 2131230847;
-			
-			// aapt resource value: 0x7f080083
-			public const int textViewHearConditionHistoryDataRowBloodPressureSlash = 2131230851;
-			
-			// aapt resource value: 0x7f080081
-			public const int textViewHearConditionHistoryDataRowDate = 2131230849;
-			
-			// aapt resource value: 0x7f080085
-			public const int textViewHearConditionHistoryDataRowHeartRate = 2131230853;
-			
-			// aapt resource value: 0x7f080084
-			public const int textViewHearConditionHistoryDataRowLowerBloodPressure = 2131230852;
-			
-			// aapt resource value: 0x7f080082
-			public const int textViewHearConditionHistoryDataRowUpperBloodPressure = 2131230850;
-			
-			// aapt resource value: 0x7f080079
-			public const int textViewHeartConditionHistoryChartsHeartRate = 2131230841;
-			
-			// aapt resource value: 0x7f080077
-			public const int textViewHeartConditionHistoryChartsLowerBloodPressure = 2131230839;
+			// aapt resource value: 0x7f080070
+			public const int textViewBloodConditionHistoryDataDateLabel = 2131230832;
 			
 			// aapt resource value: 0x7f080073
-			public const int textViewHeartConditionHistoryChartsSpinnerLabel = 2131230835;
+			public const int textViewBloodConditionHistoryDataRowDate = 2131230835;
+			
+			// aapt resource value: 0x7f080074
+			public const int textViewBloodConditionHistoryDataRowSugarLevel = 2131230836;
+			
+			// aapt resource value: 0x7f08006e
+			public const int textViewBloodConditionHistoryDataSpinnerLabel = 2131230830;
+			
+			// aapt resource value: 0x7f080071
+			public const int textViewBloodConditionHistoryDataSugarLevelLabel = 2131230833;
 			
 			// aapt resource value: 0x7f080075
-			public const int textViewHeartConditionHistoryChartsUpperBloodPressure = 2131230837;
+			public const int textViewBloodConditionMainHeading = 2131230837;
 			
-			// aapt resource value: 0x7f08007b
-			public const int textViewHeartConditionHistoryDataSpinnerLabel = 2131230843;
+			// aapt resource value: 0x7f080076
+			public const int textViewBloodConditionMainSugarLevel = 2131230838;
 			
-			// aapt resource value: 0x7f080086
-			public const int textViewHeartConditionMainHeading = 2131230854;
+			// aapt resource value: 0x7f080078
+			public const int textViewBloodConditionMainSugarLevelUnit = 2131230840;
 			
 			// aapt resource value: 0x7f08008b
-			public const int textViewHeartConditionMainHeartRate = 2131230859;
+			public const int textViewHeartConditionHistoryChartsHeartRate = 2131230859;
 			
 			// aapt resource value: 0x7f080089
-			public const int textViewHeartConditionMainLowerPressure = 2131230857;
+			public const int textViewHeartConditionHistoryChartsLowerBloodPressure = 2131230857;
+			
+			// aapt resource value: 0x7f080085
+			public const int textViewHeartConditionHistoryChartsSpinnerLabel = 2131230853;
 			
 			// aapt resource value: 0x7f080087
-			public const int textViewHeartConditionMainUpperPressure = 2131230855;
+			public const int textViewHeartConditionHistoryChartsUpperBloodPressure = 2131230855;
 			
 			// aapt resource value: 0x7f080090
-			public const int textViewMainHeading = 2131230864;
+			public const int textViewHeartConditionHistoryDataBloodPressureLabel = 2131230864;
 			
-			// aapt resource value: 0x7f0800b2
-			public const int time = 2131230898;
+			// aapt resource value: 0x7f08008f
+			public const int textViewHeartConditionHistoryDataDateLabel = 2131230863;
+			
+			// aapt resource value: 0x7f080091
+			public const int textViewHeartConditionHistoryDataHeartRateLabel = 2131230865;
+			
+			// aapt resource value: 0x7f080095
+			public const int textViewHeartConditionHistoryDataRowBloodPressureSlash = 2131230869;
+			
+			// aapt resource value: 0x7f080093
+			public const int textViewHeartConditionHistoryDataRowDate = 2131230867;
+			
+			// aapt resource value: 0x7f080097
+			public const int textViewHeartConditionHistoryDataRowHeartRate = 2131230871;
+			
+			// aapt resource value: 0x7f080096
+			public const int textViewHeartConditionHistoryDataRowLowerBloodPressure = 2131230870;
+			
+			// aapt resource value: 0x7f080094
+			public const int textViewHeartConditionHistoryDataRowUpperBloodPressure = 2131230868;
+			
+			// aapt resource value: 0x7f08008d
+			public const int textViewHeartConditionHistoryDataSpinnerLabel = 2131230861;
+			
+			// aapt resource value: 0x7f080098
+			public const int textViewHeartConditionMainHeading = 2131230872;
+			
+			// aapt resource value: 0x7f08009d
+			public const int textViewHeartConditionMainHeartRate = 2131230877;
+			
+			// aapt resource value: 0x7f08009b
+			public const int textViewHeartConditionMainLowerPressure = 2131230875;
+			
+			// aapt resource value: 0x7f080099
+			public const int textViewHeartConditionMainUpperPressure = 2131230873;
+			
+			// aapt resource value: 0x7f0800a2
+			public const int textViewMainHeading = 2131230882;
+			
+			// aapt resource value: 0x7f0800c4
+			public const int time = 2131230916;
 			
 			// aapt resource value: 0x7f080043
 			public const int title = 2131230787;
@@ -2751,8 +2805,8 @@ namespace HealthyApp
 			// aapt resource value: 0x7f080047
 			public const int topPanel = 2131230791;
 			
-			// aapt resource value: 0x7f080069
-			public const int touch_outside = 2131230825;
+			// aapt resource value: 0x7f08007b
+			public const int touch_outside = 2131230843;
 			
 			// aapt resource value: 0x7f080009
 			public const int up = 2131230729;
@@ -2763,8 +2817,8 @@ namespace HealthyApp
 			// aapt resource value: 0x7f08000a
 			public const int view_offset_helper = 2131230730;
 			
-			// aapt resource value: 0x7f0800a4
-			public const int volume_item_container = 2131230884;
+			// aapt resource value: 0x7f0800b6
+			public const int volume_item_container = 2131230902;
 			
 			// aapt resource value: 0x7f080022
 			public const int withText = 2131230754;
@@ -2923,112 +2977,127 @@ namespace HealthyApp
 			public const int abc_select_dialog_material = 2130968600;
 			
 			// aapt resource value: 0x7f040019
-			public const int design_bottom_sheet_dialog = 2130968601;
+			public const int BloodConditionHistory = 2130968601;
 			
 			// aapt resource value: 0x7f04001a
-			public const int design_layout_snackbar = 2130968602;
+			public const int BloodConditionHistoryCharts = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int design_layout_snackbar_include = 2130968603;
+			public const int BloodConditionHistoryData = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int design_layout_tab_icon = 2130968604;
+			public const int BloodConditionHistoryDataRow = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_layout_tab_text = 2130968605;
+			public const int BloodConditionMain = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_menu_item_action_area = 2130968606;
+			public const int design_bottom_sheet_dialog = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_navigation_item = 2130968607;
+			public const int design_layout_snackbar = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_navigation_item_header = 2130968608;
+			public const int design_layout_snackbar_include = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_navigation_item_separator = 2130968609;
+			public const int design_layout_tab_icon = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_navigation_item_subheader = 2130968610;
+			public const int design_layout_tab_text = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_navigation_menu = 2130968611;
+			public const int design_menu_item_action_area = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_menu_item = 2130968612;
+			public const int design_navigation_item = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int HeartConditionHistory = 2130968613;
+			public const int design_navigation_item_header = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int HeartConditionHistoryCharts = 2130968614;
+			public const int design_navigation_item_separator = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int HeartConditionHistoryData = 2130968615;
+			public const int design_navigation_item_subheader = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int HeartConditionHistoryDataRow = 2130968616;
+			public const int design_navigation_menu = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int HeartConditionMain = 2130968617;
+			public const int design_navigation_menu_item = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int Main = 2130968618;
+			public const int HeartConditionHistory = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_chooser_dialog = 2130968619;
+			public const int HeartConditionHistoryCharts = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_chooser_list_item = 2130968620;
+			public const int HeartConditionHistoryData = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_controller_material_dialog_b = 2130968621;
+			public const int HeartConditionHistoryDataRow = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int mr_controller_volume_item = 2130968622;
+			public const int HeartConditionMain = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int mr_playback_control = 2130968623;
+			public const int Main = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int mr_volume_control = 2130968624;
+			public const int mr_chooser_dialog = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_media_action = 2130968625;
+			public const int mr_chooser_list_item = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_media_cancel_action = 2130968626;
+			public const int mr_controller_material_dialog_b = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_template_big_media = 2130968627;
+			public const int mr_controller_volume_item = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media_narrow = 2130968628;
+			public const int mr_playback_control = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_lines = 2130968629;
+			public const int mr_volume_control = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_media = 2130968630;
+			public const int notification_media_action = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_part_chronometer = 2130968631;
+			public const int notification_media_cancel_action = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_part_time = 2130968632;
+			public const int notification_template_big_media = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int select_dialog_item_material = 2130968633;
+			public const int notification_template_big_media_narrow = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int select_dialog_multichoice_material = 2130968634;
+			public const int notification_template_lines = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int select_dialog_singlechoice_material = 2130968635;
+			public const int notification_template_media = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int support_simple_spinner_dropdown_item = 2130968636;
+			public const int notification_template_part_chronometer = 2130968636;
+			
+			// aapt resource value: 0x7f04003d
+			public const int notification_template_part_time = 2130968637;
+			
+			// aapt resource value: 0x7f04003e
+			public const int select_dialog_item_material = 2130968638;
+			
+			// aapt resource value: 0x7f04003f
+			public const int select_dialog_multichoice_material = 2130968639;
+			
+			// aapt resource value: 0x7f040040
+			public const int select_dialog_singlechoice_material = 2130968640;
+			
+			// aapt resource value: 0x7f040041
+			public const int support_simple_spinner_dropdown_item = 2130968641;
 			
 			static Layout()
 			{

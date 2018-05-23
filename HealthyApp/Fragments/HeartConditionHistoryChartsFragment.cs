@@ -35,7 +35,7 @@ namespace HealthyApp.Fragments
         public override void OnActivityCreated(Bundle savedInstanceState)
         {
             base.OnActivityCreated(savedInstanceState);
-
+            
             FindViews();
             HandleEvents();
 

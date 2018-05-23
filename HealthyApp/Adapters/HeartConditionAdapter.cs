@@ -17,7 +17,6 @@ namespace HealthyApp.Adapters
 {
     class HeartConditionAdapter : BaseAdapter<HeartConditionMeasurement>
     {
-
         Activity context;
         List<HeartConditionMeasurement> items;
 
@@ -56,16 +55,25 @@ namespace HealthyApp.Adapters
             {
                 convertView = context.LayoutInflater.Inflate(Resource.Layout.HeartConditionHistoryDataRow, null);
             }
-            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowDate).Text = item.MeasurementDate.ToString("dd MMMM", CultureInfo.CreateSpecificCulture("pl"));
-            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowUpperBloodPressure).Text = item.UpperBloodPressure.ToString();
-            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowLowerBloodPressure).Text = item.LowerBloodPressure.ToString();
-            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowHeartRate).Text = item.HeartRate.ToString();
+
             if (item.UpperBloodPressure > 140)
-                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowUpperBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowUpperBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+            else
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowUpperBloodPressure).SetTextColor(Android.Graphics.Color.Black);
             if (item.LowerBloodPressure > 90)
-                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowLowerBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowLowerBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+            else
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowLowerBloodPressure).SetTextColor(Android.Graphics.Color.Black);
             if (item.HeartRate < 60 || item.HeartRate > 100)
-                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowHeartRate).SetTextColor(Android.Graphics.Color.Red);
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowHeartRate).SetTextColor(Android.Graphics.Color.Red);
+            else
+                convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowHeartRate).SetTextColor(Android.Graphics.Color.Black);
+
+            convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowDate).Text = item.MeasurementDate.ToString("d MMMM", CultureInfo.CreateSpecificCulture("pl"));
+            convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowUpperBloodPressure).Text = item.UpperBloodPressure.ToString();
+            convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowLowerBloodPressure).Text = item.LowerBloodPressure.ToString();
+            convertView.FindViewById<TextView>(Resource.Id.textViewHeartConditionHistoryDataRowHeartRate).Text = item.HeartRate.ToString();
+            
             return convertView;
         }
     }
