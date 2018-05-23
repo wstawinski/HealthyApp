@@ -39,6 +39,11 @@ namespace HealthyApp.Fragments
             var adapter = new ArrayAdapter<string>(Activity, Android.Resource.Layout.SimpleSpinnerItem, availableMonthsForSpinner);
             adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
             spinnerHeartConditionHistoryData.Adapter = adapter;
+
+            var firstAvailableMonth = availableMonthsForSpinner[0];
+            var measurementsInFirstAvailableMonth = service.GetMeasurementsByMonth(firstAvailableMonth);
+            var heartConditionAdapter = new HeartConditionAdapter(Activity, measurementsInFirstAvailableMonth.AsEnumerable().Reverse().ToList());
+            listViewHeartConditionHistory.Adapter = heartConditionAdapter;
         }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -62,7 +67,7 @@ namespace HealthyApp.Fragments
             var selectedMonth = availableMonthsForSpinner[e.Position];
             var measurementsInSelectedMonth = service.GetMeasurementsByMonth(selectedMonth);
 
-            var heartConditionAdapter = new HeartConditionAdapter(Activity, measurementsInSelectedMonth);
+            var heartConditionAdapter = new HeartConditionAdapter(Activity, measurementsInSelectedMonth.AsEnumerable().Reverse().ToList());
             listViewHeartConditionHistory.Adapter = heartConditionAdapter;
         }
     }

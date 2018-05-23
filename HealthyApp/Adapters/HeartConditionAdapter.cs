@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 
 using Android.App;
 using Android.Content;
+using Android.Content.Res;
 using Android.OS;
 using Android.Runtime;
 using Android.Views;
@@ -52,10 +54,18 @@ namespace HealthyApp.Adapters
 
             if(convertView == null)
             {
-                convertView = context.LayoutInflater.Inflate(Android.Resource.Layout.SimpleListItem1, null);
+                convertView = context.LayoutInflater.Inflate(Resource.Layout.HeartConditionHistoryDataRow, null);
             }
-            convertView.FindViewById<TextView>(Android.Resource.Id.Text1).Text = item.MeasurementDate.ToString("dd.MM.yyyy HH:mm") + "\t"
-                + item.UpperBloodPressure + "/" + item.LowerBloodPressure;
+            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowDate).Text = item.MeasurementDate.ToString("dd MMMM", CultureInfo.CreateSpecificCulture("pl"));
+            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowUpperBloodPressure).Text = item.UpperBloodPressure.ToString();
+            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowLowerBloodPressure).Text = item.LowerBloodPressure.ToString();
+            convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowHeartRate).Text = item.HeartRate.ToString();
+            if (item.UpperBloodPressure > 140)
+                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowUpperBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+            if (item.LowerBloodPressure > 90)
+                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowLowerBloodPressure).SetTextColor(Android.Graphics.Color.Red);
+            if (item.HeartRate < 60 || item.HeartRate > 100)
+                convertView.FindViewById<TextView>(Resource.Id.textViewHearConditionHistoryDataRowHeartRate).SetTextColor(Android.Graphics.Color.Red);
             return convertView;
         }
     }

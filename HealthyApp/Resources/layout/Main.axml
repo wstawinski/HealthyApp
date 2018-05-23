@@ -8,9 +8,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:src="@drawable/app_icon256"
+            android:src="@drawable/app_icon192"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="192dp"
             android:id="@+id/imageViewMain"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
