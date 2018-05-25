@@ -13,7 +13,7 @@ using HealthyApp.Fragments;
 
 namespace HealthyApp
 {
-    [Activity(Label = "Historia wyników")]
+    [Activity(Label = "Historia wyników", ConfigurationChanges = Android.Content.PM.ConfigChanges.ScreenSize | Android.Content.PM.ConfigChanges.Orientation)]
     public class BloodConditionHistoryActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -37,6 +37,11 @@ namespace HealthyApp
                 if (fragment != null)
                     e.FragmentTransaction.Remove(fragment);
                 e.FragmentTransaction.Add(Resource.Id.fragmentContainerBloodConditionHistory, view);
+
+                if (view is BloodConditionHistoryChartsFragment)
+                    RequestedOrientation = Android.Content.PM.ScreenOrientation.Landscape;
+                else
+                    RequestedOrientation = Android.Content.PM.ScreenOrientation.User;
             };
 
             ActionBar.AddTab(tab);
