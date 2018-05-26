@@ -34,14 +34,27 @@
             android:layout_marginRight="30dp"
             android:textSize="15dp"
             android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainUpperPressure"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHeartConditionMainUpperPressure"
+                android:maxLength="3"
+                android:inputType="number" />
+            <TextView
+                android:text="mm Hg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHeartConditionMainUpperPressureUnit"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+        </LinearLayout>
         <TextView
             android:text="Ciśnienie rozkurczowe:"
             android:layout_width="match_parent"
@@ -51,14 +64,27 @@
             android:layout_marginRight="30dp"
             android:textSize="15dp"
             android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainLowerPressure"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHeartConditionMainLowerPressure"
+                android:maxLength="3"
+                android:inputType="number" />
+            <TextView
+                android:text="mm Hg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHeartConditionMainLowerPressureUnit"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+        </LinearLayout>
         <TextView
             android:text="Tętno:"
             android:layout_width="match_parent"
@@ -68,14 +94,27 @@
             android:layout_marginRight="30dp"
             android:textSize="15dp"
             android:textColor="#000000" />
-        <EditText
-            android:layout_width="50dp"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/editTextHeartConditionMainHeartRate"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="30dp"
-            android:maxLength="3"
-            android:inputType="number" />
+            android:layout_marginLeft="30dp">
+            <EditText
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editTextHeartConditionMainHeartRate"
+                android:maxLength="3"
+                android:inputType="number" />
+            <TextView
+                android:text="uderzenia/min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewHeartConditionMainHeartRateUnit"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="#000000" />
+        </LinearLayout>
         <Button
             android:text="Zapisz wynik"
             android:layout_width="match_parent"

@@ -20,7 +20,7 @@
             android:id="@+id/spinnerBloodConditionHistoryCharts"
             android:layout_marginBottom="20dp" />
         <TextView
-            android:text="Poziom cukru we krwi [mg/dL]:"
+            android:text="Poziom cukru we krwi:"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/textViewBloodConditionHistoryChartsSugarLevel"
